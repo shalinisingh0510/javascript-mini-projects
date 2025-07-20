@@ -5,7 +5,7 @@ console.log("input filed is",inputFieldEl)
 for(let i=0;i<buttonEl.length;i++){
     buttonEl[i].addEventListener("click",()=>{
         const buttonValue = buttonEl[i].textContent;
-        if(buttonValue =="c"){
+        if(buttonValue =="C"){
             clearResult()
 
         }
@@ -18,7 +18,8 @@ for(let i=0;i<buttonEl.length;i++){
     });
 }
 function clearResult(){
-    inputFieldEl.value = '';
+    console.log("input filed value is",inputFieldEl.value)
+    inputFieldEl.value = "";
 }
 
 function calculateResult(){
